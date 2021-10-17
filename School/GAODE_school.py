@@ -62,7 +62,7 @@ if __name__ == '__main__':
     adcode=['110101','110102','110105','110106','110107','110108','110109','110111','110112','110113','110114','110115','110116','110117']
     #pool = Pool(processes=2)
     for code in adcode:
-        url='https://restapi.amap.com/v3/place/text?key=70cfe8605882530d550644f927ab4257&types='+str(keywords)+'&city=' +str(code) +'&citylimit=true&offset=20&children=1'
+        url='https://restapi.amap.com/v3/place/text?key=***********&types='+str(keywords)+'&city=' +str(code) +'&citylimit=true&offset=20&children=1'
         mes=getnum(url)
         num = int(mes) / 20
         for i in range(1,int(num)+2):
