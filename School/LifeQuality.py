@@ -42,7 +42,7 @@ if __name__ == '__main__':
     POI_list=[catering,shopping,lifeservice,entertainment,medical,hotel_industry,traffic]
     for item in school.find():
         if item['flag']=='1':
-            url = 'https://restapi.amap.com/v3/place/around?key=70cfe8605882530d550644f927ab4257&location=' + str(item['location']) + '&radius=1500'
+            url = 'https://restapi.amap.com/v3/place/around?key=****************&location=' + str(item['location']) + '&radius=1500'
             Get_POI_Num(POI_list, url, item['name'], item['ID'])
         else:
             print(str(item['name']) + "信息已获取，跳过")
